@@ -1,0 +1,25 @@
+n=int(input())
+l=input().split()
+li=[]
+for i in l:
+    li+=[int(i)]
+#print(li)
+c=0
+
+for i in range(0,n):
+    max=li[i]
+    for j in range(i+1,n):
+        if(max<li[j]):
+            max=li[j]
+            break
+    if(max==li[i]):
+        c+=1
+print(c)        
+        
+        
+        
+        
+        
+    
+    
+    
